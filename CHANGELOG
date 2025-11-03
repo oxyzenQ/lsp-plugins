@@ -2,6 +2,14 @@
 * RECENT CHANGES
 *******************************************************************************
 
+=== 1.2.25 ===
+* Improved plugin metadata validation tool in plugin framework.
+* VST3 data synchronization between DSP and UI is now performed in the UI thread if possible.
+* Fixed VST3 crash on JUCE-based hosts related to improper IRunLoop handling.
+* Fixed Room Builder plugin that could not render impulse responses for some built-in rooms. 
+* Fixed possible SIGFPE crash on LADSPA descriptor generation related to division by zero error.
+* Fixed data transport for LV2 plugins that caused many annoying log messages in Ardour.
+
 === 1.2.24 ===
 * Implemented Ring-Modulated sidechain plugin series.
 * Implemented Multiband Ring-Modulated sidechain plugin series.
